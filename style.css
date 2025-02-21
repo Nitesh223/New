@@ -1,0 +1,257 @@
+@media only screen and (max-width: 455px){
+
+}
+    
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(37, 3, 92);
+    color: aliceblue;
+}
+
+.header {
+
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+
+    border-radius: 12px;
+}
+
+.header a:hover {
+    color: rgb(27, 8, 81);
+}
+
+.logo {
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(244, 254, 255);
+    font-weight: 200;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.navbar a:hover {
+    color: rgb(160, 227, 5);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    background: url(image2.jpg);
+    height: 100vh;
+    padding: 0 10%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.home-content {
+    max-width: 650px;
+}
+
+.home-content h1 {
+    color: #3a2edd;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.home-content h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+    display: inline flex;
+    width: 400px;
+    height: 50px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn-box a {
+    height: 100%;
+    width: 150px;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 7px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+
+}
+
+.btn-box :nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+
+.about {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f9fcff;
+}
+
+.about-content p {
+    display: flex;
+    box-shadow: 0px 0px 5px rgb(168, 134, 134);
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fcff;
+    height: 80vh;
+    width: 80vw;
+    color: black;
+    letter-spacing: 3px;
+    margin-left: 150px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 70px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 30px;
+    color: black;
+    font-family: emoji;
+
+}
+
+h3 {
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.work {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 30px;
+    background-color: #f9fcff;
+    color: black;
+
+}
+
+.contact {
+    background-image: url(top-view-blue-monday-concept-composition-with-telephone.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f9fcff;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 30px;
+    color: black;
+}
+
+.contact-items {
+    width: 70vw;
+    height: 80vh;
+    background-color: rgb(255, 255, 255);
+    margin-left: 200px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 3px rgb(158, 136, 136);
+}
+
+h5 {
+    font-family: math;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+
+.contact-inputs{
+float: left;
+margin-left: 80px;
+margin-top: 30px;
+border: 1px solid #ced4da;
+border-radius: 3px;
+/* border-style: none; */
+}
+input{
+    height: 35px;
+    width: 400px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+#button1{
+    
+    height: 50px;
+    width:200px ;
+    font-size: 20px;
+    background-color:#0078ff;
+    color: #fff;
+    border: 2px solid;
+    border-style: hidden;
+    border-radius: 50px;
+    margin: 10px 710px 10px 10px ;
+}
+button:hover{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.work{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.container1{
+    /* border: 2px solid blue; */
+    height: 400px;
+    width: 350px;
+    margin: 50px;
+    overflow: hidden;
+    box-shadow: 1px 1px 2px rgb(147, 233, 233);
+}
+.container1 img{
+    /* border: 2px solid; */
+    height:300px ;
+    width: 100%;
+}
+.container1 img:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+section ul{
+    list-style: none;
+    margin: 10px;
+    
+}
