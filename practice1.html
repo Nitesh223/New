@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="practice1.css">
 
 <body>
-    
+
     <div class="container">
         <div class="name">
             <h1>Students Detail</h1>
@@ -27,13 +27,28 @@
         </div>
         <h2>Subject detail</h2>
         <div>
-            <b>Maths</b> : <input type="number" placeholder="Enter marks of Maths" id="maths"> <BR></BR>
             <b>Science </b>: <input type="number" placeholder="Enter marks of Science" id="science"><BR></BR>
             <b>Social Studies</b> : <input type="number" placeholder="Enter marks of SST" id="sst"><BR></BR>
             <b> English</b> : <input type="number" placeholder="Enter marks of English" id="english"><BR></BR>
-            <b>Sanskrit</b> : <input type="number" placeholder="Enter marks of Sanskrit" id="sanskrit"><BR></BR>
+            <b>Sanskrit</b> : <input type="number" placeholder="Enter marks of Sanskrit" id="sanskrit">
         </div>
         <div><b>Upload :</b><input type="file" placeholder="Upload your Image" id="file"></div>
+            <b>State :</b> <select value="" id="">
+            <option value="">-Select State-</option>
+            <option value="">Madhya Pradesh</option>
+            <option value="">West Bengal</option>
+            <option value="">Uttar Pradesh</option>
+            <option value="">Bihar</option>
+            <option value="">Jharkhand</option>
+        </select><BR></BR>
+        <b>District :</b> <select value="" id="">
+            <option value="">-Select District-</option>
+            <option value="">Mirzapur</option>
+            <option value="">Varanasi</option>
+            <option value="">Jhansi</option>
+            <option value="">Agra</option>
+            <option value="">Ghaziabad</option>
+        </select>
         <div>
             <button id="Submit" onclick="student()">Submit</button>
             <div id="result1"></div>

@@ -30,9 +30,15 @@ button{
     justify-content: center;
     cursor: pointer;
     background-color:  #5d74ff;
-    margin: 10px 10px 12px 267px;
+    margin: -10px 15px 0px 267px;
 }
 input{
     height: 10px;
     border-radius: 5px;
+}
+select{
+    border-radius: 5px;
+    border: 2px solid;
+    height: 30px;
+    padding: 5px;
 }

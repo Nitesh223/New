@@ -1,23 +1,4 @@
-// function calculator(Nitesh){
-//     var firstvalue = parseFloat(document.getElementById("firstvalue").value);
-//     var secondvalue = parseFloat(document.getElementById("secondvalue").value);
 
-//     switch(Nitesh)
-//     {
-//         case "add" :
-//             document.getElementById("result").innerHTML = "The sum of first value and second value is " + (parseInt(firstvalue) + parseInt(secondvalue));
-//             break;
-//             case "subtract" :
-//             document.getElementById("result").innerHTML = firstvalue-secondvalue;
-//             break;
-//             case "multiply" :
-//             document.getElementById("result").innerHTML = firstvalue*secondvalue;
-//             break;
-//             case "divide" :
-//             document.getElementById("result").innerHTML = firstvalue/secondvalue;
-//             break;
-//     }
-// }
 function student() {
     var firstname = document.getElementById("firstname").value;
     var secondname = document.getElementById("secondname").value;
@@ -43,5 +24,4 @@ function student() {
     }
     document.getElementById("result1").innerHTML = `Your name is ${firstname} ${secondname} <div> ${mobile} </div> Your date of birth is : ${dob} , Gender : ${gender}<div>Marks in Maths : ${maths} , Marks in Science : ${science} ,Marks in  SST : ${sst} ,Marks in English : ${english} ,Marks in Sanskrit : ${sanskrit} , </div> <div> Your Total Marks is : ${total} ,Percentage : ${percentage}</div> <div><img src = "${file}">${file}</div>`
 
-    console.log("Nitesh")
 }
