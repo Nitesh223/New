@@ -13,8 +13,9 @@ function student() {
     var sanskrit = document.getElementById("sanskrit").value;
     var total = parseInt(english) + parseInt(sanskrit) + parseInt(maths) + parseInt(science) + parseInt(sst)
     var percentage = (parseInt(english) + parseInt(sanskrit) + parseInt(maths) + parseInt(science) + parseInt(sst)) / 5
-    var file = document.getElementById("file").files[0]?.name
-    console.log(file)
+    // var file = document.getElementById("file").files[0]?.name
+    var file = document.getElementById("file").files[0];
+
     var gender = ""
     if (male.checked){
         gender="male"
@@ -22,6 +23,7 @@ function student() {
     else if(Female.checked){
         gender="Female"
     }
-    document.getElementById("result1").innerHTML = `Your name is ${firstname} ${secondname} <div> ${mobile} </div> Your date of birth is : ${dob} , Gender : ${gender}<div>Marks in Maths : ${maths} , Marks in Science : ${science} ,Marks in  SST : ${sst} ,Marks in English : ${english} ,Marks in Sanskrit : ${sanskrit} , </div> <div> Your Total Marks is : ${total} ,Percentage : ${percentage}</div> <div><img src = "${file}">${file}</div>`
+    document.getElementById("result1").innerHTML = `Your name is ${firstname} ${secondname} <div> ${mobile} </div> Your date of birth is : ${dob} , Gender : ${gender}<div>Marks in Maths : ${maths} , Marks in Science : ${science} ,Marks in  SST : ${sst} ,Marks in English : ${english} ,Marks in Sanskrit : ${sanskrit} , </div> <div> Your Total Marks is : ${total} ,Percentage : ${percentage}</div> <div>        ${fileURL ? `<div><img src="${fileURL}" alt="Uploaded Image" style="max-width: 200px; max-height: 200px;"></div>` : ""}
+</div>`
 
 }
