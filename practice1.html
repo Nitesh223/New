@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESULT</title>
+    <title>Document</title>
 </head>
 <link rel="stylesheet" href="practice1.css">
 
@@ -13,7 +13,7 @@
     <div class="container">
         <div class="name">
             <h1>Students Detail</h1>
-            <span><input type="text" placeholder="Enter first name" id="firstname" onclick="student('Submit')"></span>
+            <span><input type="text" placeholder="Enter first name" id="firstname" ></span>
             <span><input type="text" placeholder="Enter last name" id="secondname"></span>
             <div id="name"></div>
         </div>
@@ -27,31 +27,32 @@
         </div>
         <h2>Subject detail</h2>
         <div>
+            <b>Maths</b>: <input type="number" placeholder="Enter marks of Maths" id="maths"><BR></BR>
             <b>Science </b>: <input type="number" placeholder="Enter marks of Science" id="science"><BR></BR>
             <b>Social Studies</b> : <input type="number" placeholder="Enter marks of SST" id="sst"><BR></BR>
             <b> English</b> : <input type="number" placeholder="Enter marks of English" id="english"><BR></BR>
             <b>Sanskrit</b> : <input type="number" placeholder="Enter marks of Sanskrit" id="sanskrit">
         </div>
         <div><b>Upload :</b><input type="file" placeholder="Upload your Image" id="file"></div>
-            <b>State :</b> <select >
+            <b>State :</b> <select id="State">
             <option >-Select State-</option>
-            <option value="M.P">Madhya Pradesh</option>
-            <option value="W.B">West Bengal</option>
-            <option value="U.P">Uttar Pradesh</option>
-            <option value="BH">Bihar</option>
-            <option value="JH">Jharkhand</option>
+            <option value="MADHYA PRADESH">Madhya Pradesh</option>
+            <option value="WEST BENGAL">West Bengal</option>
+            <option value="UTTAR PRADESH">Uttar Pradesh</option>
+            <option value="BIHAR">Bihar</option>
+            <option value="JHARKHAND">Jharkhand</option>
         </select><BR></BR>
-        <b>District :</b> <select value="DISTRICT" >
+        <b>District :</b> <select id="District">
             <option >-Select District-</option>
-            <option value="MR">Mirzapur</option>
-            <option value="VR">Varanasi</option>
-            <option value="JH">Jhansi</option>
-            <option value="AG">Agra</option>
-            <option value="GH">Ghaziabad</option>
+            <option value="MIRZAPUR">Mirzapur</option>
+            <option value="VARANASI">Varanasi</option>
+            <option value="JHANSI">Jhansi</option>
+            <option value="AGRA">Agra</option>
+            <option value="GHAZIABAD">Ghaziabad</option>
         </select>
         <div>
             <button id="Submit" onclick="student()">Submit</button>
-            <div id="result1"></div>
+            <div id="result"></div>
 </body>
 <script src="practice1.js"></script>
 
