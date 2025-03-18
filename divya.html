@@ -5,11 +5,45 @@
     <meta name="viewport" content="width=placeholder, initial-scale=1.0">
     <title>Document</title>
 </head>
-<script>
-    document.getElementById("demo").innerHTML = "My name is Nitesh";
-</script>
+
 <body>
-<p id="demo">Hii I am Nitesh</p>
-<button id="button" onclick='document.getElementById("demo").style.fontSize="35px"'>Click me</button>
+    <select id="state" onchange="state()">       
+        <option>-select state-</option>
+        <option>Madhya pradesh</option>
+        <option>Uttar pradesh</option>
+        <option>Himachal pradesh</option>
+        <option>Hariyana</option>
+    </select>
+  
+    <select id="district">
+  </select>
 </body>
+<script>
+    function state(){
+    var state = document.getElementById("state").value
+    var district = document.getElementById("district")
+    switch(state)
+    {
+        case "Madhya pradesh":
+            var mpcity = ["-select District-","Bhopal","Ujjain","shivpuri","indore"]
+            for(var i=0; i<mpcity.length; i++){
+                var opt = document.createElement("option")          //<option> </option>
+                opt.text = mpcity[i]                                //<option>-select District- </option>
+                district.add(opt)
+            }
+            break;
+
+            case "Uttar pradesh":
+            var upcity = ["-select District-","Lucknow","Agra","Ayodhaya","Prayagraj"]
+            for(var i=0; i<upcity.length; i++){
+                var opt = document.createElement("option")          //<option> </option>
+                opt.text = upcity[i]                                //<option>-select District- </option>
+                district.add(opt)
+            }
+            break;
+            
+    }
+}
+</script>
+
 </html>

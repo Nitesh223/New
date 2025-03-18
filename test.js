@@ -44,6 +44,31 @@ use let for variable and const for constant
 //Reference (Non Primitive)
 // arrays , objects , function
 
-const name = "nitesh"
-console.log(typeof name);
+// const name = "nitesh"
+// console.log(typeof name);
+
+// display option in java script
+// innerHTML  or innerText. --> document.getElementById("demo").innerText = "Hello World";
+// console.log() --> console.log(5+6)
+// window.alert() --> window.alert(5 + 6) or alert(5+6)
+//document.write() --> document.write(5 + 6);
+// window.print() --> print the existing page --> <button onclick="window.print()">Print this page</button>
+
+// switch case :
+// let day = "Monday";
+// switch (day) {
+//   case "Monday":
+//     console.log("Start of the week!");
+//     break;
+//   case "Friday":
+//     console.log("Weekend is near!");
+//     break;
+//   case "Sunday":
+//     console.log("It's a rest day!");
+//     break;
+//   default:
+//     console.log("It's a regular day.");
+// }
+
+//Memory --> stack(Primitive) and Heap(Non-primitive)  
 
