@@ -44,7 +44,7 @@ function student() {
     <td>${gender}</td>
     <td>${total}</td>
     <td>${percentage}%</td>
-    <td>${State}</td>
+    <td>${state}</td>
     <td>${District}</td>
     <td><img src="${file}" alt="Uploaded Image" style="max-width: 50px; max-height: 50px;"></td>
     </tr>
