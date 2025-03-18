@@ -22,7 +22,7 @@ function student() {
     else if (Female.checked) {
         gender = "Female"
     }
-
+    console.log(state)
     document.getElementById("result").innerHTML = `<table border = 3 cellspacing="20">
     <caption font-weight:bold;>Student Data</caption>
      <tr>
@@ -57,21 +57,13 @@ function state() {
         case "Madhya Pradesh":
             removeDistrict()
             var mpdistrict = ["Bhopal", "Ujjain", "Gwalior", "Indore", "Sanchi"]
-            for (var i = 0; i < mpdistrict.length; i++) {
-                var opt = document.createElement("option")
-                opt.text = mpdistrict[i]
-                District.add(opt);
-            }
+            FillDD(mpdistrict)
             break;
 
         case "Uttar Pradesh":
             removeDistrict()
             var updistrict = ["Lucknow", "varanasi", "Agra", "Prayagraj", "Ayodhya"]
-            for (var i = 0; i < updistrict.length; i++) {
-                var opt = document.createElement("option")
-                opt.text = updistrict[i]
-                District.add(opt);
-            }
+            FillDD(updistrict)
             break;
 
         case "West Bengal":
@@ -110,5 +102,14 @@ function state() {
 function removeDistrict() {
     for (var j = District.options.length - 1; j >= 0; j--) {
         District.remove(j)
+    }
+}
+
+function FillDD(dis){
+    var District = document.getElementById("District")
+    for (var i = 0; i < dis.length; i++) {
+        var opt = document.createElement("option")
+        opt.text = dis[i]
+        District.add(opt);
     }
 }
