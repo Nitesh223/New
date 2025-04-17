@@ -13,13 +13,13 @@
     <div class="container">
         <div class="name">
             <h1>Students Detail</h1>
-            <span><input type="text" placeholder="Enter first name" id="firstname" ></span>
+            <span><input type="text" placeholder="Enter first name" id="firstname"></span>
             <span><input type="text" placeholder="Enter last name" id="secondname"></span>
             <div id="name"></div>
         </div>
         <div>
-            <span><input type="tel" placeholder="Enter mobile number" id="mobile"></span>
-            DOB :<span><input type="date" placeholder="Enter date of birth" id="dob"></span>
+            <span><input type="number" placeholder="Enter roll number" id="roll"></span>
+            <b>School Name :</b><span><input type="text" placeholder="Enter School name" id="school"></span>
         </div>
         <div>
             <b>Gender</b> : <span><input type="radio" name="Gender" value="Male" id="male"> Male</span>
@@ -34,15 +34,17 @@
             <b>Sanskrit</b> : <input type="number" placeholder="Enter marks of Sanskrit" id="sanskrit">
         </div>
         <div><b>Upload :</b><input type="file" placeholder="Upload your Image" id="file"></div>
-            <b>State :</b> <select id="State" onchange="state()">
-            <option >-Select State-</option>
+        <b>State :</b>
+        <select id="State" onchange="state()">
+            <option>-Select State-</option>
             <option value="Madhya Pradesh">Madhya Pradesh</option>
             <option value="West Bengal">West Bengal</option>
             <option value="Uttar Pradesh">Uttar Pradesh</option>
             <option value="Bihar">Bihar</option>
             <option value="Jharkhand">Jharkhand</option>
         </select><BR></BR>
-        <b>District :</b> <select id="District">
+        <b>District :</b>
+        <select id="District">
             <option value="">-Select district-</option>
         </select>
         <div>
