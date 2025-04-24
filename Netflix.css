@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Playwrite+IN:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-image: url(background.jpg);
+    background-size: max(1200px, 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+}
+
+body {
+    background-color: black;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    height: 60px;
+}
+
+nav img {
+    color: red;
+    width: 120px;
+    position: relative;
+    z-index: 7;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: 100%;
+    font-family: 'Martel Sans', sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 0 30px;
+    gap: 20px;
+}
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(75, 72, 72);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+
+    background-color: whitesmoke;
+}
+
+.btn-red {
+    background: red;
+    color: white;
+    font-size: 18px;
+    padding: 4px 24px;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.btn-red-sm {
+    background: red;
+    color: white;
+    padding: 3px 9px 3px 9px;
+}
+.main input{
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    padding: 7px 25px;
+    border-radius: 4px;
+    background-color: rgba(23,23,23,0.7);
+    border: 1px solid rgba(212, 209, 209, 0.5);
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.button :hover{
+    cursor: pointer;
+}

@@ -1,4 +1,3 @@
-
 // ECMA Script--> documentation of java script
 /*const accountId = 154566
 let accountEmail = "nitesh725025@gmail.com"
@@ -6,7 +5,7 @@ var accountPassword = 125469
 accountCity = "Giridih"
 console.log(accountId);
 let accountState;
- console.log([accountEmail , accountId,accountPassword,accountState]);*/
+console.log([accountEmail , accountId,accountPassword,accountState]);*/
 /*
 prefer not to use var
 use let for variable and const for constant
@@ -71,4 +70,62 @@ use let for variable and const for constant
 // }
 
 //Memory --> stack(Primitive) and Heap(Non-primitive)  
+// let name = "Nitesh"
+// let address = "Dhanbad"
+// console.log(`Hello I am ${name} and I am from ${address}`)
+// const gamename = new String("Nitesh")
+// console.log(gamename)
+//----------------------------------------------------------------------
+// Number and maths 
+// 
+//+++++++++++++++++++++  Maths  +++++++++++++++++++++++++++++++++++++++++++++++
+console.log(Math)
+console.log(Math.abs(-100))
+console.log(Math.round())
+//---------------------------------------------------------------------------------------------
+// var str = "My name is Nitesh "
+// var str2 = "and I like playing badminton"
+// console.log(str.charCodeAt(4))
+// console.log(str.charAt(5));
+// console.log(str.length)
+// console.log(str.concat(str2))
+// console.log(str.endsWith("Nitesh"))
+// console.log(str.endsWith("is"))
+// console.log(str.startsWith("My"))
+// console.log(str.fromCharCode(77))
+// console.log(str.includes("name"))
+// console.log(str.includes("Kumar"))
+//console.log(str.indexOf("Nitesh"))
+// var str3 = "My name is Nitesh and his name is also Nitesh"
+//console.log(str3.lastIndexOf("Nitesh"))
+// var str4 = "2411069"
+// console.log(str4.padEnd(10,"X"))
+// console.log(str4.padStart(15,"#"))
+// console.log(str.slice(0,10))
+// console.log(str.substring(0,10))
+// console.log(str.substr(0,10))
+// console.log(str.repeat(4))
+// console.log(str.replace("Nitesh" , "Rahul"))
+// console.log(str3.replaceAll("Nitesh" ,"Rahul"))
+// console.log(str.split(" "))
+// var str5 = "   Nitesh    "
+// console.log(str5.trim())
+// console.log(str5.trimEnd())
+// console.log(str5.trimStart())
 
+//----------------------------------------------------------------------------------------------
+
+//1.Write a JavaScript function to check whether an input is a string or not. 
+// function is_string(a){
+// if(typeof a == "string"){
+//     return true
+// }
+// else{
+//     return false
+// }
+// }
+// console.log(is_string(5))+  
+//2.Write a JavaScript function to check whether a string is blank or not.
+function is_blank(){
+
+}
