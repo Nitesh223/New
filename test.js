@@ -78,11 +78,36 @@ use let for variable and const for constant
 //----------------------------------------------------------------------
 // Number and maths 
 // 
-//+++++++++++++++++++++  Maths  +++++++++++++++++++++++++++++++++++++++++++++++
-console.log(Math)
-console.log(Math.abs(-100))
-console.log(Math.round())
-//---------------------------------------------------------------------------------------------
+//+++++++++++++++++++++  Maths  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// console.log(Math)
+// console.log(Math.abs(-100))
+// console.log(Math.round(25.89))
+// console.log(Math.ceil(4.2))
+// console.log(Math.floor(8.9))
+// console.log(Math.min(8,42,6,8,9))
+// console.log(Math.max(4,5,8,3,69))
+// console.log(Math.random())
+// console.log(Math.random()*10+1)
+// console.log(Math.floor(Math.random()*10+1))
+//+++++++++++++++++ arrays ++++++++++++++++++++++++++++++
+// const arr = [1,2,3,4,5,6]
+// console.log(arr[2])
+// const myarr = new Array(1,2,3,4,5,6)
+// console.log(myarr)
+// myarr.push(4)   //add value to last index
+// console.log(myarr)
+// myarr.pop()   // remove last character
+// console.log(myarr)
+// myarr.unshift(9) // add any value to start and shift all the values
+// myarr.shift() // remove first index value
+// console.log(myarr.slice(0,2))
+// console.log(myarr.splice(0,3))
+
+// splice manipulate the original array ,remove sliced element from original array
+// console.log(Array.isArray("Hitesh")) // tells us that it is array or not 
+// console.log(Array.from("Hitesh")) // give us array
+
+//----------------------------------------------------------------------------------------------------
 // var str = "My name is Nitesh "
 // var str2 = "and I like playing badminton"
 // console.log(str.charCodeAt(4))
@@ -124,8 +149,37 @@ console.log(Math.round())
 //     return false
 // }
 // }
-// console.log(is_string(5))+  
-//2.Write a JavaScript function to check whether a string is blank or not.
-function is_blank(){
+// function call(){
+//     var arr = ["Nitesh","Prakher","Rahul","Tushar","Shaswat"]
+//     var newarr = arr.filter((item)=>{
+//         return item.includes("a")
+//     })
+//     console.log(newarr)
+// }
+// call()
 
-}
+// function call(){
+//     var price = [12,45,85,36,96]
+//     var t = price.reduce((item1,item2)=>{
+//         return item1+item2
+//     }, 0)
+//     console.log(t)
+    
+// }
+// call() 
+
+// function call(){
+//     var arr = ["Nitesh","Prakher","Rahul","Tushar","Shaswat"]
+//     var newarr = arr.map((item)=>{
+//         return item + " ji"
+//     })
+//     console.log(newarr)
+// }
+// call()
+
+// function call(){
+//     var arr = ["Nitesh","Prakher","Rahul","Tushar","Shaswat"]
+//     var newarr = arr.sort()
+//     console.log(newarr)
+// }
+// call()
