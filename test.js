@@ -107,6 +107,40 @@ use let for variable and const for constant
 // console.log(Array.isArray("Hitesh")) // tells us that it is array or not 
 // console.log(Array.from("Hitesh")) // give us array
 
+//++++++++++++++++++++++++++++++++++++++++++++ Objects ++++++++++++++++++++++++++++++++++++++++++++++
+// const js_user = new Object()  // singleton object
+// object literal
+// const js_user = {
+//     name: "Nitesh" ,
+//     age : 18,
+//     location : "Dhanbad",
+//     email : "nitesh@GOOGLE.COM",
+//     isloggedin: false,
+//     lastLoginDays: ["Monday","Tuesday","Saturday"]
+// }
+// console.log(js_user.email)
+
+// const tinder_user ={}
+// tinder_user.id = "123abc"
+// tinder_user.name = "Jacob"
+// tinder_user.isloggedin = false
+// console.log(tinder_user)
+
+// const regular_user = {
+//     email : "some@gmail.com",
+//     fullname : {
+//              firstname: "Nitesh",
+//              lastname: "Mandal"
+//     }
+// }
+// console.log(regular_user.fullname.firstname)
+
+const obj1 = { 1: "a", 2: "b" }
+const obj2 = { 3: "a", 4: "b" }
+// const obj3 = {obj1 , obj2}
+// const obj3 = Object.assign(obj1 , obj2)
+const obj3 = { ...obj1, ...obj2 }
+console.log(obj3)
 //----------------------------------------------------------------------------------------------------
 // var str = "My name is Nitesh "
 // var str2 = "and I like playing badminton"
@@ -164,7 +198,7 @@ use let for variable and const for constant
 //         return item1+item2
 //     }, 0)
 //     console.log(t)
-    
+
 // }
 // call() 
 
@@ -183,3 +217,83 @@ use let for variable and const for constant
 //     console.log(newarr)
 // }
 // call()
+
+// function call(){
+//     var firstarr = [96,56,55,63,53]
+// var secondarr = firstarr.every(num=>num>50) // return true or false on the basis of condition for every element
+// console.log(secondarr)
+// }
+// call()
+
+// function call(){
+//     var firstarr = [96,16,24,63,35]
+// var secondarr = firstarr.some(num=>num>50) // check the condition for atleast one element if they satisfy the condition
+// console.log(secondarr)
+// }
+// call()
+
+// include --- check if the array contain any value or Not
+// var my_name = ["Nitesh","Satyam","Suraj","Rahul","priya"]
+// console.log(my_name.includes("Nitesh")) --true
+
+//  join ---this method return a new string by concatinating all of the arrays element separated by the specified charactor
+// var firstname = ["N","i","t","e","s","h"]
+// var newarr = firstname.join("")
+// var newarr1 = firstname.join("-")
+// var newarr2 = firstname.join("*")
+// console.log(newarr)
+// console.log(newarr1)
+// console.log(newarr2)
+
+// findIndex --- return the index of the array element
+// var my_name = ["Nitesh","Satyam","Suraj","Rahul","priya"]
+// var index = my_name.findIndex((name) => name === "priya")
+// console.log(index)
+
+//slice -- returns a new array with specified start to end and do not consider the last index 
+// const arr = ["MP","UP","Jharkhand","Bihar","Bengal"]
+// console.log(arr.slice(0,3))
+
+// reverse() ----> reverse the array , arr.reverse()
+// push()  ------> push new element to the end of the array, arr.push("Hyderabad")
+// pop -------> delete the last index , arr.pop()
+
+// shift() -----> remove the first element of a array and return the removed array
+// unshift ------> add element to the begining of an array and return the length of the new array
+
+
+// var state = ["MP","UP","Jharkhand","Bihar","Bengal"]
+// // console.log(state.shift())
+// console.log(state.unshift("Haryana"))
+
+// splice ---- to add element at any index in array 
+// syntax ---- arr.splice(index,0,newelement) --- 0 represent that we dont remove any element
+
+
+
+
+
+
+
+
+
+
+//Date function 
+// const d = new Date()
+// const td = d.getDate()
+// const mon = (d.getMonth()+1)
+// const year = d.getFullYear()
+// console.log(td+"-"+mon+"-"+year)
+
+// // Time function
+// const h = d.getHours()
+// const m = d.getMinutes()
+// const s =d.getSeconds()
+// console.log(h+":"+m+":"+s)
+
+// Set Date 
+var d = new Date()
+d.setMonth(6)
+d.setFullYear(2026
+)
+console.log(d)
